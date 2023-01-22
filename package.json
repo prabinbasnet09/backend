@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon ./index.js localhost 8080",
-    "build": "webpack"
+    "dev": "nodemon ./index.js localhost 8080"
   },
   "keywords": [],
   "author": "",
