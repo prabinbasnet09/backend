@@ -18,7 +18,7 @@ app.post('/api/students', (req, res) => {
 
 app.get('/', (req, res) => {
     res.json({
-        msg: 'Hello World'
+        msg: 'This is the backend for React App'
     });
 });
 
