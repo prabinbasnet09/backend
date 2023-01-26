@@ -1,3 +1,4 @@
+require('dotenv').config();
 const registerService = require('./services/register');
 const http = require('http');
 const express = require('express');
@@ -39,5 +40,5 @@ app.get('/api/test', (req, res) => {
     res.send('This is a test');
 });
 
-http.createServer(app).listen(8080, 
-    () => {console.log('Server is running on port 8080')});
+http.createServer(app).listen(process.env.PORT || 8080, 
+    () => {console.log('Server is running')});
