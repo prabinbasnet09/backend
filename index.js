@@ -6,15 +6,15 @@ const app = express();
 
 const cors = require('cors');
 
-//urlencoded is a middleware that parses the body of the request
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
 //cors is a middleware that allows cross origin requests
 app.use(cors({
     origin: '*'
 }
 ));
+
+//urlencoded is a middleware that parses the body of the request
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.post('/api/students', (req, res) => {
     // const { firstName, lastName, classification, email } = req.body;
