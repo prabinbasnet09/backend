@@ -2,6 +2,7 @@ const registerService = require('./services/register');
 const http = require('http');
 const express = require('express');
 const app = express();
+
 const cors = require('cors');
 
 //urlencoded is a middleware that parses the body of the request
@@ -9,7 +10,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //cors is a middleware that allows cross origin requests
-app.use(cors());
+app.use(cors({
+    origin: '*'
+}
+));
 
 app.post('/api/students', (req, res) => {
     // const { firstName, lastName, classification, email } = req.body;
