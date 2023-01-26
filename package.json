@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon ./index.js localhost 8080"
+    "dev": "nodemon ./index.js localhost 8000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.1302.0",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "http-proxy-middleware": "^2.0.6",
     "nodemon": "^2.0.20",
