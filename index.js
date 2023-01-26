@@ -8,7 +8,7 @@ const cors = require('cors');
 
 //cors is a middleware that allows cross origin requests
 app.use(cors({
-    origin: 'https://server-rivrlslwv-prabinbasnet09.vercel.app'
+    origin: '*'
 }
 ));
 
